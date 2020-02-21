@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name='FATEC_IPN_Tip_Calculator'
