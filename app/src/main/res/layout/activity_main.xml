@@ -17,7 +17,9 @@
         android:layout_column="0"
         android:layout_row="0"
         android:layout_columnSpan="2"
-        android:layout_gravity="fill_horizontal"/>
+        android:layout_gravity="fill_horizontal"
+        android:maxLength="6"
+        android:digits="0123456789"/>
 
     <TextView
         android:id="@+id/amountTextView"
@@ -27,45 +29,65 @@
         android:layout_column="0"
         android:layout_columnSpan="2"
         android:layout_gravity="fill_horizontal"
+        android:background="@color/amount_background"
         android:hint="@string/enter_amount"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+        android:padding="@dimen/textview_padding"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:elevation="@dimen/elevation"/>
 
     <TextView
+        android:layout_row="1"
+        android:layout_column="0"
         android:id="@+id/percentTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
         android:hint="@string/tip_percentage"
         android:text="@string/tip_percentage" />
 
     <SeekBar
         android:id="@+id/percentSeekBar"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="@dimen/seekbar_height"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:layout_gravity="fill_horizontal"
+        android:max="30"
+        android:progress="15"
+        android:elevation="@dimen/elevation"/>
 
     <TextView
         android:id="@+id/tipLabelTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="right"
         android:hint="@string/tip"
-        android:text="@string/tip"/>
+        android:text="@string/tip" />
 
     <TextView
         android:id="@+id/tipTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:layout_gravity="fill_horizontal"
+        android:background="@color/result_background"
+        android:gravity="center"
+        android:padding="@dimen/textview_padding"/>
 
     <TextView
         android:id="@+id/totalLabelTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="right"
         android:hint="@string/total"
-        android:text="@string/total"/>
+        android:text="@string/total" />
 
     <TextView
         android:id="@+id/totalTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:layout_gravity="fill_horizontal"
+        android:background="@color/result_background"
+        android:gravity="center"
+        android:padding="@dimen/textview_padding"/>
 
 </GridLayout>
