@@ -77,7 +77,6 @@ public class MainActivity extends AppCompatActivity {
                     zerarTudo();
                 }
             }
-
             @Override
             public void afterTextChanged(Editable s) {
 
